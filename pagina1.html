@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="90.css">
+    <title>Aula 01 - Formulários</title>
+</head>
+<body>
+    <h1>Cadastro de Colaboradores</h1>
+    <div id="parte1">
+    <form action="" method="post">
+        <label for="primeiro_nome">Primeiro Nome</label>
+        <input type="text" 
+               name="primeiro_nome"
+               id="primeiro_nome"
+               placeholder="Digite apenas seu 1º nome"><br><br>
+
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" 
+               name="sobrenome"
+               id="sobrenome"><br><br>
+
+        <label for="senha">Senha</label>
+        <input type="password" 
+               name="senha"
+               id="senha"><br><br>
+
+        <label for="repita_senha">Repita a Senha</label>
+        <input type="password" 
+               name="repita_senha"
+               id="repita_senha"><br><br>
+
+        <label for="email">E-mail</label>
+        <input type="email" 
+               name="email"
+               id="email" 
+               required><br><br>
+
+        <label for="tempo_experiencia">Tempo de Experiência (anos):</label>
+        <input type="number" 
+               name="tempo_experiencia"
+               id="tempo_experiencia"><br><br>
+
+        <label for="altura">Altura (m):</label>
+        <input type="number"
+               name="altura"
+               id="altura"
+               min="1.60"
+               max="3.50"
+               step="0.01"><br><br>
+
+        <label for="telefone">Telefone</label> 
+        <input type="tel" 
+               name="telefone"
+               id="telefone"><br><br>
+
+        <label for="data_nasc">Data de Nascimento:</label>
+        <input type="date"
+               name="data_nasc"
+               id="data_nasc"
+               required><br><br>
+
+        <label for="hora_nasc">Hora de Nascimento</label>
+        <input type="time"
+               name="hora_nasc"
+               id="hora_nasc"><br><br>
+               
+        <h4>Preferências de Linguagem</h4>       
+        <input type="checkbox"
+               name="op_python" 
+               id="op_python"
+               value="1001">
+        <label for="op_python">Python</label><br><br>
+
+        <input type="checkbox"
+               name="op_js"
+               id="op_js"
+               value="1002">
+        <label for="op_js">JavaScript</label><br><br>
+
+        <input type="checkbox"
+               name="op_csharp"
+               id="op_csharp"
+               value="1003">
+        <label for="op_csharp">C#</label><br><br>
+        </div>
+        <h4>Possui alguma deficiência?</h4>
+
+        <input type="radio"
+               name="e_pcd"
+               id="e_pcd_sim"
+               value="sim">
+        <label for="e_pcd_sim">Sim</label><br>
+        <input type="radio"
+               name="e_pcd"
+               id="e_pcd_nao"
+               value="nao">
+        <label for="e_pcd_nao">Não</label><br><br>
+
+        <label for="cor_preferencial">Customização de cor (site):</label>
+        <input type="color"
+               name="cor_preferencial"
+               id="cor_preferencial"><br><br>
+
+        <label for="observacoes">Observações</label>:<br>
+        <textarea name="observacoes"
+                  id="observacoes"
+                  cols="30"
+                  rows="10">Alguntexto</textarea><br><br>
+                  
+       <label for="curso_escolhido">Curso:</label>
+       <select name="curso_escolhido" id="curso_escolhido">
+        <option value="">Selecione</option>
+        <option value="500">Des. de Sistemas</option>
+        <option value="501">Automação</option>
+        <option value="502">Mecatrônica</option>
+       </select><br><br>
+       <input type="submit" value="Enviar">
+
+       <label> Disponibilidade(mensal):</label>
+       <input type="range"
+              min="30"
+              max="200">
+    <br><br>
+        <button type="resert"></button>
+
+    </form>
+</body>
+</html>
